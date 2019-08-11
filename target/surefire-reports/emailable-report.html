@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Command line suite</th></tr><tr><td><a href="#t0">Command line test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">57,328</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com_tests.LoginTest</td><td><a href="#m0">afterSuite</a></td><td rowspan="1">1565451333161</td><td rowspan="1">21228</td></tr><tr><th colspan="4">Command line test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com_tests.LoginTest</td><td><a href="#m1">afterSuite</a></td><td rowspan="1">1565451354389</td><td rowspan="1">0</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com_tests.LoginTest</td><td><a href="#m2">testLogin</a></td><td rowspan="1">1565451281685</td><td rowspan="1">21036</td></tr><tr class="passedodd"><td rowspan="1">com_tests.Sample_Test</td><td><a href="#m3">f</a></td><td rowspan="1">1565451304060</td><td rowspan="1">1</td></tr><tr class="passedeven"><td rowspan="1">com_tests.SearchHotelTest</td><td><a href="#m4">search_Hotel</a></td><td rowspan="1">1565451309728</td><td rowspan="1">21695</td></tr></tbody></table><h2>Command line test</h2><h3 id="m0">com_tests.LoginTest#afterSuite</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.sun.mail.util.MailConnectException: Couldn&apos;t connect to host, port: smtp.gmail.com, 586; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2194)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:726)
+	at javax.mail.Service.connect(Service.java:366)
+	at javax.mail.Service.connect(Service.java:246)
+	at utility.JavaEmail.sendEmail(JavaEmail.java:68)
+	at config.BaseClass.afterSuite(BaseClass.java:63)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:352)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 34 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com_tests.LoginTest#afterSuite</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com_tests.LoginTest#testLogin</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com_tests.Sample_Test#f</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com_tests.SearchHotelTest#search_Hotel</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

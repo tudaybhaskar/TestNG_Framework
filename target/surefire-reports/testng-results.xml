@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[===========@before class is invoked=======]]>
+    </line>
+    <line>
+      <![CDATA[===========@before class is invoked=======]]>
+    </line>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="57328" started-at="2019-08-10T15:34:35Z" finished-at="2019-08-10T15:35:33Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="57328" started-at="2019-08-10T15:34:35Z" finished-at="2019-08-10T15:35:33Z">
+      <class name="com_tests.LoginTest">
+        <test-method status="PASS" signature="beforTesting()[pri:0, instance:com_tests.LoginTest@21bcffb5]" name="beforTesting" is-config="true" duration-ms="201" started-at="2019-08-10T21:04:35Z" finished-at="2019-08-10T21:04:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforTesting -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com_tests.SearchHotelTest@380fb434]" name="beforeTest" is-config="true" duration-ms="16" started-at="2019-08-10T21:04:35Z" finished-at="2019-08-10T21:04:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com_tests.Sample_Test@5ebec15]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-08-10T21:04:35Z" finished-at="2019-08-10T21:04:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com_tests.LoginTest@21bcffb5]" name="beforeClass" is-config="true" duration-ms="5666" started-at="2019-08-10T21:04:36Z" finished-at="2019-08-10T21:04:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===========@before class is invoked=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com_tests.LoginTest@21bcffb5]" name="testLogin" duration-ms="21036" started-at="2019-08-10T21:04:41Z" finished-at="2019-08-10T21:05:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com_tests.LoginTest@21bcffb5]" name="afterMethod" is-config="true" duration-ms="515" started-at="2019-08-10T21:05:02Z" finished-at="2019-08-10T21:05:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginTest.testLogin()[pri:0, instance:com_tests.LoginTest@21bcffb5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterclass()[pri:0, instance:com_tests.LoginTest@21bcffb5]" name="afterclass" is-config="true" duration-ms="820" started-at="2019-08-10T21:05:03Z" finished-at="2019-08-10T21:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com_tests.LoginTest@21bcffb5]" name="afterTest" is-config="true" duration-ms="432" started-at="2019-08-10T21:05:32Z" finished-at="2019-08-10T21:05:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com_tests.SearchHotelTest@380fb434]" name="afterTest" is-config="true" duration-ms="85" started-at="2019-08-10T21:05:33Z" finished-at="2019-08-10T21:05:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com_tests.Sample_Test@5ebec15]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-08-10T21:05:33Z" finished-at="2019-08-10T21:05:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="FAIL" signature="afterSuite()[pri:0, instance:com_tests.LoginTest@21bcffb5]" name="afterSuite" is-config="true" duration-ms="21228" started-at="2019-08-10T21:05:33Z" finished-at="2019-08-10T21:05:54Z">
+          <exception class="com.sun.mail.util.MailConnectException">
+            <message>
+              <![CDATA[Couldn't connect to host, port: smtp.gmail.com, 586; timeout -1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 586; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2194)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:726)
+	at javax.mail.Service.connect(Service.java:366)
+	at javax.mail.Service.connect(Service.java:246)
+	at utility.JavaEmail.sendEmail(JavaEmail.java:68)
+	at config.BaseClass.afterSuite(BaseClass.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:350)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:352)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.sun.mail.util.MailConnectException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="SKIP" signature="afterSuite()[pri:0, instance:com_tests.Sample_Test@5ebec15]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-08-10T21:05:54Z" finished-at="2019-08-10T21:05:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com_tests.LoginTest -->
+      <class name="com_tests.Sample_Test">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com_tests.Sample_Test@5ebec15]" name="beforeSuite" is-config="true" duration-ms="15" started-at="2019-08-10T21:04:35Z" finished-at="2019-08-10T21:04:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com_tests.Sample_Test@5ebec15]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-08-10T21:05:04Z" finished-at="2019-08-10T21:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com_tests.Sample_Test@5ebec15]" name="f" duration-ms="1" started-at="2019-08-10T21:05:04Z" finished-at="2019-08-10T21:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com_tests.Sample_Test@5ebec15]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-10T21:05:04Z" finished-at="2019-08-10T21:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com_tests.Sample_Test@5ebec15]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-08-10T21:05:04Z" finished-at="2019-08-10T21:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com_tests.Sample_Test@5ebec15]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-08-10T21:05:04Z" finished-at="2019-08-10T21:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com_tests.Sample_Test -->
+      <class name="com_tests.SearchHotelTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com_tests.SearchHotelTest@380fb434]" name="beforeClass" is-config="true" duration-ms="4833" started-at="2019-08-10T21:05:04Z" finished-at="2019-08-10T21:05:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[===========@before class is invoked=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com_tests.SearchHotelTest@380fb434]" name="beforeMethod" is-config="true" duration-ms="833" started-at="2019-08-10T21:05:08Z" finished-at="2019-08-10T21:05:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="search_Hotel()[pri:0, instance:com_tests.SearchHotelTest@380fb434]" name="search_Hotel" duration-ms="21695" started-at="2019-08-10T21:05:09Z" finished-at="2019-08-10T21:05:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_Hotel -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com_tests.SearchHotelTest@380fb434]" name="afterMethod" is-config="true" duration-ms="373" started-at="2019-08-10T21:05:31Z" finished-at="2019-08-10T21:05:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=search_Hotel status=SUCCESS method=SearchHotelTest.search_Hotel()[pri:0, instance:com_tests.SearchHotelTest@380fb434] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterclass()[pri:0, instance:com_tests.SearchHotelTest@380fb434]" name="afterclass" is-config="true" duration-ms="801" started-at="2019-08-10T21:05:31Z" finished-at="2019-08-10T21:05:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- com_tests.SearchHotelTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
