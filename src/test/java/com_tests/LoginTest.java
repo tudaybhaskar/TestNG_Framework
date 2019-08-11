@@ -86,6 +86,7 @@ public class LoginTest extends BaseClass {
 			 MediaEntityModelProvider media1=MediaEntityBuilder.createScreenCaptureFromPath("./Reports/LoginTest.jpg").build();
 			 test.fail("Failed screenshot", media1);
 			 test.fail("Screenshot").addScreenCaptureFromPath(path);
+			 test.fail("Failed at this place");
 				 
 		 }
 		
